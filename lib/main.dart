@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:simple_app/screens/menus.dart';
+import 'package:simple_app/screens/convert.dart';
+import 'package:simple_app/screens/latestRate.dart';
+import 'package:simple_app/screens/convert.dart';
  
 void main() {
   runApp(MaterialApp(
-    title: "Simple App",
+    title: "Exchange Currency",
     home: Scaffold(
       appBar: AppBar(
-        title: Text("Simple App"),
+        title: const Text("Exchange Currency"),
       ),
-      body: Menus(),
+      body: const LatestRate()
     ),
   ));
 }
  
-class MyApp extends StatelessWidget {
+/* class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -99,4 +101,4 @@ class MyHomePage extends StatelessWidget{
       ),
     );
   }
-}
+} */
